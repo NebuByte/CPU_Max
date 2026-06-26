@@ -4,11 +4,11 @@ Tiny Windows tray utility to toggle the **Maximum Processor State** power settin
 
 ## Features
 - System tray icon (green = enabled, red = disabled)
-- Right-click menu: Enable / Disable / Start with Windows / Install / Exit
+- Right-click menu: Enable Max Performance / Start with Windows / Exit
 - Double-click tray icon to toggle
 - Hover tooltip shows status + live CPU and RAM usage
-- Single .exe, no dependencies, ~50 KB
-- Optional one-click "Install" copies itself to `%LOCALAPPDATA%\CPUMax` and adds a startup entry
+- Single .exe, no dependencies, ~75 KB
+- Optional installer (`CPUMax-Setup.exe`) does a per-user install to `%LOCALAPPDATA%\CPUMax` with autostart — no admin
 
 ## Build
 
@@ -30,7 +30,7 @@ Output: `build\CPUMax.exe`
 
 Just double-click `build\CPUMax.exe`. Look for the dot in your tray.
 
-To install permanently: right-click the tray icon -> **Install to %LOCALAPPDATA%**, then **Start with Windows**.
+To start it automatically on login, right-click the tray icon -> **Start with Windows**. For a full install (Start Menu shortcut + uninstaller), run `dist\CPUMax-Setup.exe`.
 
 ## How "Enabled / Disabled" works
 
